@@ -32,9 +32,9 @@
       </a>
     </div>
 
-    <div class="flex flex-col max-w-[1014px] mx-auto">
-      <nav class="bg-white dark:bg-black items-center sticky top-0">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="flex flex-col max-w-full w-[95%] md:w-full mx-auto">
+      <nav class="absolute z-[50] dark:bg-black items-center sticky top-0 bg-white dark:bg-black border-b-2 dark:border-white border-gray-400">
+        <div class="max-w-[1014px] flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Giventus Marco</span>
           </a>
@@ -50,8 +50,8 @@
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border dark:border-gray-100 border-gray-800 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:justify-between justify-center items-center">
+          <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border dark:border-gray-100 border-gray-800 bg-white dark:bg-black rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:justify-between justify-center items-center">
               <li>
                 <a
                   href="#home"
@@ -70,7 +70,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#portofolio"
                   class="relative text-gray-900 dark:text-white text-[16px] font-semibold before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-current before:bottom-0 before:left-0 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
                 >
                   Portfolio
@@ -78,7 +78,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   class="relative text-gray-900 dark:text-white text-[16px] font-semibold before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-current before:bottom-0 before:left-0 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left"
                 >
                   Contact
@@ -89,13 +89,13 @@
         </div>
       </nav>
 
-      <div id="home" class="flex flex-col md:flex-row gap-[20px] mx-auto items-center mt-[140px] scroll-mt-[220px]">
+      <div id="home" class="flex flex-col md:flex-row gap-[20px] mx-auto items-center mt-[200px] mb-[200px] scroll-mt-[280px]">
         <!-- <img src="img/main2.png" class="max-w-[400px] h-auto" alt="" /> -->
         <div class="flex flex-col">
           <div class="flex flex-col gap-[0] text-center mb-[20px]">
-            <p class="font-semibold text-[25px] dark:text-white">Hello, i'm</p>
-            <p class="font-bold text-[60px] dark:text-white">Giventus Marco</p>
-            <p class="font-semibold text-[40px] underline dark:text-white">Software Engineer</p>
+            <p class="font-semibold text-[15px] md:text-[25px] dark:text-white">Hello, i'm</p>
+            <p class="font-bold text-[40px] md:text-[60px] dark:text-white">Giventus Marco</p>
+            <p class="font-semibold text-[30px] md:text-[40px] underline dark:text-white">Software Engineer</p>
           </div>
           <div class="flex flex-row gap-[15px] justify-center mt-[40px]">
             <a
@@ -148,8 +148,163 @@
         </div>
       </div>
 
-      <div id="exp" class="h-[40000px]"></div>
+      <div id="exp" class="max-w-[1014px] w-[95%] md:w-full mt-[120px] mx-auto mb-[120px] scroll-mt-[220px]">
+        <div class="flex flex-col mx-auto items-center justify-center w-[95%] md:w-full mb-[40px] text-black dark:text-white">
+          <p>Explore My</p>
+          <p class="font-bold text-[45px]">Experiences</p>
+        </div>
+        <div class="flex flex-col md:flex-row w-full gap-[20px] mx-auto text-black dark:text-white">
+          <div class="flex md:w-[50%] w-[95%] flex-col mx-auto">
+            <div class="border border-black dark:border-white flex flex-col rounded-lg py-[20px] md:px-[40px] px-[20px]">
+              <p class="text-center font-semibold text-[20px]">Apple Developer Academy</p>
+              <p class="text-center font-semibold text-[16px] underline mb-[10px]">iOS Developer</p>
+              <p class="text-center font-light text-[14px] mb-[20px]">March 2024 - December 2024</p>
+              <div class="flex flex-col md:flex-row justify-center md:justify-start gap-[15px] md:items-start items-center">
+                <div class="flex flex-row md:flex-col gap-[15px] justify-center mx-auto">
+                
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">SwiftUI</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">UIKit</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Git</p>
+                </div>
+              </div>
+              <div class="flex flex-row md:flex-col gap-[15px] justify-center mx-auto">
+                
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Apple Frameworks</p>
+                </div>
+               
+              </div>
+              </div>
+              <p class="text-justify mt-[20px]">Collaborate with teams to design, develop, and complete app and game projects within set deadlines. Involves utilizing a range of Apple technologies to deliver high-quality, innovative solutions.</p>
+            </div>
+          </div>
+          <div class="flex md:w-[50%] w-[95%] flex-col mx-auto">
+            <div class="border border-black dark:border-white flex flex-col rounded-lg py-[20px] md:px-[40px] px-[20px]">
+              <p class="text-center font-semibold text-[20px]">PT. Talenta Sinergi Group</p>
+              <p class="text-center font-semibold text-[16px] underline mb-[10px]">Fullstack Developer</p>
+              <p class="text-center font-light text-[14px] mb-[20px]">August 2023 - December 2023</p>
+              <div class="flex flex-col md:flex-row justify-center md:justify-start gap-[15px]">
+                <div class="flex flex-row md:flex-col gap-[15px] justify-center mx-auto">
+                
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">HTML</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Javascript</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">CSS</p>
+                </div>
+              </div>
+              <div class="flex flex-row md:flex-col gap-[15px] justify-center mx-auto">
+                
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Laravel</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Tailwind</p>
+                </div>
+                <div class="flex flex-row gap-[6px] items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-black dark:text-white" fill="currentColor">
+                    <path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path>
+                  </svg>
+                  <p class="text-[11px] md:text-[15px]">Git</p>
+                </div>
+              </div>
+              </div>
+              <p class="text-justify mt-[20px]">Specialized in full-stack development using Laravel. My responsibilities included implementing user interfaces, as well as developing and maintaining server-side applications to ensure seamless functionality and optimal performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portofolio" class="max-w-[1014px] w-[95%] md:w-full mt-[120px] mx-auto mb-[120px]">
+        <div class="flex flex-col mx-auto items-center justify-center w-[95%] md:w-full mb-[40px] text-black dark:text-white">
+          <p>Browse My</p>
+          <p class="font-bold text-[45px]">Portfolios</p>
+        </div>
+      </div>
+
+      <div id="contact" class="max-w-[1014px] w-[95%] md:w-full mt-[120px] mx-auto mb-[80px] scroll-mt-[220px]">
+        <div class="flex flex-col mx-auto items-center justify-center w-[95%] md:w-full mb-[40px] text-black dark:text-white">
+          <p>Get In Touch</p>
+          <p class="font-bold text-[45px] mb-[20px]">Contact Me</p>
+          <div class="flex flex-row border rounded-full gap-[20px] p-[20px] border-black dark:border-white ">
+            <a href="" class="flex flex-row items-center">
+              <svg class="w-3.5 h-3.5 text-black me-2 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                </svg>
+                <p class="relative text-gray-900 dark:text-white text-[16px] font-normal before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-current before:bottom-0 before:left-0 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left">Giventusmrco@gmail.com</p>
+            </a>
+            <a href="" class="flex flex-row items-center">
+              <svg class="w-3.5 h-3.5 text-black dark:text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                </svg>
+                <p class="relative text-gray-900 dark:text-white text-[16px] font-normal before:content-[''] before:absolute before:w-full before:h-[2px] before:bg-current before:bottom-0 before:left-0 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:scale-x-100 hover:before:origin-left">LinkedIn</p>
+            </a>
+          </div>
+          <form class="w-[110%] md:w-[80%]flex flex-col justify-center mt-[40px] border border-black dark:border-white md:px-[60px] md:py-[40px] px-[30px] py-[15px] rounded-[40px]">
+            <div class="mb-5">
+              <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@email.com" required />
+            </div>
+            <div class="mb-5">
+              <label for="name" class="block mb-2 text-sm font-medium text-black dark:text-white">Your name</label>
+              <input type="text" id="name" class="shadow-sm bg-gray-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="your name here" required />
+            </div>
+            <div class="mb-5">
+              <label for="message" class="block mb-2 text-sm font-medium text-black dark:text-white">Your message</label>
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-black focus:ring-blue-500 focus:border-blue-500 dark:bg-black dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a message..."></textarea>
+            </div>
+            <button type="submit" class="w-full text-white dark:text-black dark:hover:text-white dark:hover:bg-black dark:hover:border-2 dark:hover:border-white border-2 border-white dark:border-black hover:border-black hover:bg-white hover:text-black font-semibold duration-500 ease-in-out dark:bg-white bg-black hover:bg-white  rounded-lg text-sm px-[68px] py-2.5 mb-2">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="text-black dark:text-white flex flex-row gap-[10px] mx-auto mb-[20px] items-center">
+        <p class="text-[11px] md:text-[15px]">Copyrights</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white text-[11px] sm:text-[14px]" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 22c5.421 0 10-4.579 10-10S17.421 2 12 2 2 6.579 2 12s4.579 10 10 10zm0-18c4.337 0 8 3.663 8 8s-3.663 8-8 8-8-3.663-8-8 3.663-8 8-8z"></path>
+          <path d="M12 17c.901 0 2.581-.168 3.707-1.292l-1.414-1.416C13.85 14.735 12.992 15 12 15c-1.626 0-3-1.374-3-3s1.374-3 3-3c.993 0 1.851.265 2.293.707l1.414-1.414C14.582 7.168 12.901 7 12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5z"></path>
+        </svg>
+        <p class="text-[11px] md:text-[15px]">Giventus Marco. All Rights Reserved</p>
+      </footer>
     </div>
+
+    
   </body>
   <script src="./main.js" type="module"></script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
