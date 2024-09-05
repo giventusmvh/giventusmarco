@@ -7,3 +7,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.underline-animate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor; /* Color for underline */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.underline-animate:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.dark .underline-animate::before {
+  background-color: #ffffff; /* White underline in dark mode */
+}
+.underline-animate {
+  position: relative;
+  display: inline-block;
+  color: #000000; /* Black text color */
+}
+.dark .underline-animate {
+  color: #ffffff; /* White text color in dark mode */
+}

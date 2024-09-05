@@ -37,3 +37,22 @@ themeToggleBtn.addEventListener("click", function () {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector("[data-collapse-toggle]");
+  const navbar = document.getElementById("navbar-default");
+  const menuItems = document.querySelectorAll(".menu-item");
+
+  menuButton.addEventListener("click", function () {
+    navbar.classList.toggle("hidden");
+  });
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      if (window.innerWidth < 768) {
+        // Tailwind's md breakpoint is 768px
+        navbar.classList.add("hidden");
+      }
+    });
+  });
+});
