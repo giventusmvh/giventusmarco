@@ -7,6 +7,7 @@ export default {
         manrope: ["Manrope", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        jetbrains: ["JetBrains", "sans-serif"],
       },
     },
   },
